@@ -2,7 +2,9 @@ body {
     margin:0;
     padding:0;
     font-family: 'Oswald', sans-serif;
-    color: #404040;
+    color: #1ccecb;
+    background: url(https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) center no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
 
 .page_wrapper {
     padding-top: 85px;
+    
 }
 
 a {
@@ -28,11 +31,11 @@ a {
 }
 
 .bck_b_light {
-    background: #999592;
+    background: #1ccecb;
 }
 
 .bck_b_dark {
-    background: #272723;
+    background: #1ccecb;
 }
 
 .dialog_alert {
@@ -110,14 +113,14 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     padding: 10px;
-    background: #e1ddc3;
+    background: lightgray;
     margin-top: 10px;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
 }
 
 .error_label {
-    color: #F44336;
+    color: #1ccecb;
     display:block;
     font-size: 15px;
 }
@@ -172,7 +175,7 @@ select {
 }
 
 .form_success {
-    background: #4CAF50;
+    background:#1ccecb;
     color: #ffffffff;
     padding: 10px;
     display: block;
@@ -186,8 +189,9 @@ select {
     text-transform: uppercase;
     padding: 10px;
     display: table;
-    background: #e1ddc3;
+    background: lightgray;
     margin-top: 10px;
+    color: black;
 }
 
 .card_link,
@@ -251,7 +255,7 @@ header {
 }
 
 header .logo {
-    font-family: 'Monoton', cursive;
+    font-family: 'Cambria';
     color: #ffffff;
     font-size: 40px;
     padding: 11px 0px;
@@ -271,13 +275,12 @@ header .container .left{
 
 header .container .right{
    flex-grow: 1;
-   border-left: 1px solid #eeeeee;
-   border-right: 1px solid #eeeeee;
+   
 }
 header .container .right .top ,
 header .container .right .bottom {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     text-align: right;
     color:#ffffff;
     font-size: 15px;
@@ -285,8 +288,9 @@ header .container .right .bottom {
 }
 
 header .container .right .top {
-    color:#c9c9c9;
-    border-bottom: 1px solid #ffffff;
+    color:white;
+    margin-top:14px;
+   
 }
 
 header .cart_link {
@@ -294,16 +298,7 @@ header .cart_link {
     position: relative;
 }
 
-header .cart_link span {
-    position: absolute;
-    background: red;
-    top: 2px;
-    color: #ffff;
-    left: -8px;
-    border-radius: 50%;
-    padding: 0px 7px 2px 7px;
-    font-size: 12px;
-}
+
 header .log_out_link {
     cursor: pointer;
     display: inline-block;
@@ -319,21 +314,21 @@ header .log_out_link {
 
 footer .logo {
     text-align: center;
-    font-family: 'Monoton', cursive;
+    font-family: 'Cambria';
     color: #ffffff;
-    font-size: 40px;
+    font-size: 30px;
     padding: 11px 0px;
-    border-bottom: 1px solid #4d4d4d;
+    border-bottom: 1px solid white;
 }
 
 footer .wrapper {
     display: flex;
-    color: #828282;
+    color: white;
 }
 
 footer .left,
 footer .right {
-    flex: 1;
+flex: 1;
 }
 
 footer .business_info {
@@ -344,7 +339,6 @@ footer .business_info {
 footer .business_info .tag {
     flex-grow: 1;
     position: relative;
-    width: 50%;
     margin-bottom: 30px;
 }
 footer .business_info .icon {
@@ -726,10 +720,11 @@ footer .business_info .info {
          REGISTER LOGIN
 ===============================*/
 
+
 .register_login_container {
     display: flex;
-    border: 1px solid #999592;
-    border-top: 5px solid #999592;
+    border: 1px solid #1ccecb;
+    border-top: 5px solid #1ccecb;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 80px 0px 110px 0px;
@@ -744,8 +739,7 @@ footer .business_info .info {
 
 .register_login_container h2 {
     margin: 20px 0px;
-    text-transform: uppercase;
-    color: #686868;
+    color: #1ccecb;
 }
 
 .register_login_container p{
@@ -782,8 +776,8 @@ footer .business_info .info {
     padding: 0 0 0 29px;
 }
 
-.user_container .user_`_panel {
-    background: #f8f8f8;
+.user_container .user_info_panel {
+    background-color: rgba(130, 126, 126, 0.5);
     padding: 20px;
     margin-top: 20px;
 }

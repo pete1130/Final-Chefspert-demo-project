@@ -9,6 +9,7 @@ require('dotenv').config();
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
 mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -145,7 +146,7 @@ app.post('/api/users/login',(req,res)=> {
     });
 });
 
-app.get('/api/user/logout',auth,(req,res)=> {
+app.get('/api/users/logout',auth,(req,res)=> {
     User.findOneAndUpdate(
         { _id: req.user._id },
         { token:''},
