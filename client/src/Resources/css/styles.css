@@ -13,7 +13,7 @@ body {
 }
 .page_container {
     min-height: 75vh;
-    padding-top: 85px;
+    padding-top: 69px;
 }
 .main_loader {
     text-align: center;
@@ -205,16 +205,16 @@ select {
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
-    color: #c3c0b1;
-    background: #f8f8f8;
+    color: whitesmoke;
+    background: #1ccecb;
     transition: all 200ms ease-in;
     cursor: pointer;
 }
 .card_link:hover,
 .bag_link:hover,
 .add_to_cart_link:hover {
-    background: #aaaaaa;
-    color: #ffff;
+    background: whitesmoke;
+    color: #1ccecb;
 }
 .add_to_cart_link {
     color: #6b6b6b;
@@ -360,6 +360,8 @@ footer .business_info .info {
     position:relative;
     background-size: cover !important;
     background-position: center left !important;
+
+    
 }
 
 .featured_container .featured_action {
