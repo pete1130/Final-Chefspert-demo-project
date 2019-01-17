@@ -1,22 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
 const links = [
     {
         name: 'My Account',
         linkTo: '/user/dashboard'
     },
-    {
-        name: 'User Profile',
-        linkTo: '/user/user_profile'
-    },
-    {
-        name: 'My Cart',
-        linkTo: '/user/cart'
-    },
+    
 ]
-
-
 
 const UserLayout = (props) => {
 

@@ -1,0 +1,59 @@
+{
+    "_id" : ObjectId("5b2d3648ca6a03cd33af924c"),
+    "sold" : 38,
+    "name" : "Sliders",
+    "description" : "Classic sliders to share with your group.",
+    "price" : 11.25,
+    "meal" : ObjectId("5b2c11481470fbaecd159dfd"),
+    "mealtype" : "Appetizer",
+    "available" : true,
+    "publish" : true,
+    "createdAt" : ISODate("2018-06-22T17:47:52.838Z"),
+    "updatedAt" : ISODate("2018-06-26T22:09:18.969Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2d38027d75e2cdcb31cf04"),
+    "sold" : 4,
+    "name" : "Ghost Pepper Burger",
+    "description" : "So spicy that a waiver will have to be signed to eat this.",
+    "price" : 15.00,
+    "meal" : ObjectId("5b2c11d2d37177aedfd6d962"),
+    "mealtype" : "Entree",
+    "available" : true,
+    "publish" : true,
+    "createdAt" : ISODate("2018-06-22T17:55:14.152Z"),
+    "updatedAt" : ISODate("2018-06-26T22:09:18.972Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2d38217d75e2cdcb31cf05"),
+    "sold" : 14,
+    "name" : "Cupcakes",
+    "description" : "So delightful they might be from heaven.",
+    "price" : 4.00,
+    "meal" : ObjectId("5c400ba091e1ba78a48ab856"),
+    "mealtype" : "Dessert",
+    "available" : true,
+    "publish" : true,
+    "createdAt" : ISODate("2018-06-22T17:55:14.152Z"),
+    "updatedAt" : ISODate("2018-06-26T22:09:18.972Z"),
+    "__v" : 0
+}
+
+{
+    "_id" : ObjectId("5b2d39d97d75e2cdcb31cf0c"),
+    "sold" : 27,
+    "name" : "Lobster Mac and Cheese",
+    "description" : "Best Mac and Cheese EVER!",
+    "price" :29.00,
+    "meal" : ObjectId("5c4011f51e904c7af195678e"),
+    "mealtype" : "Entree",
+    "available" : true,
+    "publish" : true,
+    "createdAt" : ISODate("2018-06-22T17:55:14.152Z"),
+    "updatedAt" : ISODate("2018-06-26T22:09:18.972Z"),
+    "__v" : 0
+}

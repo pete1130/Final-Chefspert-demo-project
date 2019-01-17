@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dishSchema = mongoose.Schema({
+const mealSchema = mongoose.Schema({
     name: {
         required: true,
         type: String,
@@ -8,6 +8,6 @@ const dishSchema = mongoose.Schema({
     }
 });
 
-const Dish = mongoose.model('Dish', dishSchema);
+const Meal = mongoose.model('Meal', mealSchema);
 
-module.exports = { Dish };
+module.exports = { Meal };

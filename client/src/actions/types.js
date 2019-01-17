@@ -4,3 +4,7 @@ export const AUTH_USER = 'auth_user';
 export const LOGOUT_USER = 'logout_user';
 
 export const GET_PRODUCTS_BY_SELL = 'get_products_by_sell';
+export const GET_MEALS = 'get_meals';
+export const GET_PRODUCTS_TO_SHOP = 'get_products_to_shop';
+export const ADD_PRODUCT = 'add_product';
+export const CLEAR_PRODUCT = 'clear_product'

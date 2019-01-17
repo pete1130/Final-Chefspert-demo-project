@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HomeSlider from './home_slider';
 
 import {connect} from 'react-redux';
-import {getProductsBySell} from '../../actions/product_actions';
+import {getProductsBySell} from '../../actions/products_actions';
 import CardBlock from '../utils/card_block';
 
 

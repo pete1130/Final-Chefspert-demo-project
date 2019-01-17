@@ -10,10 +10,12 @@ body {
 .container {
     width:1100px;
     margin: 0 auto;
+
 }
 .page_container {
     min-height: 75vh;
     padding-top: 69px;
+    
 }
 .main_loader {
     text-align: center;
@@ -52,7 +54,7 @@ a {
 
 .load_more_container span {
     cursor: pointer;
-    background: #2196F3;
+    background: #1ccecb;
     color: #ffffff;
     font-size: 27px;
     padding: 10px 60px;
@@ -486,7 +488,7 @@ footer .business_info .info {
 .card_item_wrapper .tags .brand {
     font-size: 17px;
     font-weight: 700;
-    color: #2196F3;
+    color: #1ccecb;
 }
 
 .card_item_wrapper .tags .name {
@@ -564,10 +566,12 @@ footer .business_info .info {
 
 .shop_wrapper {
     display:flex;
+    color: #1ccecb !important;
 }
 
 .shop_wrapper .left {
     flex-grow: 1;
+    color: #1ccecb !important;
 }
 
 .shop_wrapper .right {
@@ -577,6 +581,7 @@ footer .business_info .info {
 .collapse_title span {
     text-transform: uppercase;
     font-weight: 700;
+    color: #1ccecb !important;
 }
 
 .grid_btn {
@@ -592,6 +597,7 @@ footer .business_info .info {
 .shop_options {
     border-bottom: 1px solid #e8e8e8;
     margin: 0px 20px 20px 20px;
+    color: #1ccecb !important;
 }
 
 
@@ -826,7 +832,7 @@ footer .business_info .info {
 
 .user_product_block .cart_remove_btn {
     cursor: pointer;
-    background: #F44336;
+    background: #1ccecb;
     display: inline-block;
     padding: 5px 10px;
     color: #ffffff;

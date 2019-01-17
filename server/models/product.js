@@ -18,9 +18,13 @@ const productSchema = mongoose.Schema ({
         type: Number,
         maxlength: 255
     },
-    dish: {
+    meal: {
         type: Schema.Types.ObjectId,
-        ref: 'Dish',
+        ref: 'Meal',
+        required: true
+    },
+    mealtype: {
+        type: String,
         required: true
     },
     delivery: {

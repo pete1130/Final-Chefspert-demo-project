@@ -24,13 +24,16 @@ class Card extends Component {
                 >  </div>
                     <div className="action_container">
                         <div className="tags">
+                            {/* <div className="brand">{props.brand.name}</div> */}
                             <div className="name">{props.name}</div>
                             <div className="name">${props.price}</div>
                         </div>
-                    </div>
+                    
                     { props.grid ?
                         <div className="description">
-                                    test
+                            <p>
+                                {props.description}
+                            </p>    
                         </div>
                         :null
                     }
@@ -55,7 +58,7 @@ class Card extends Component {
                             />
                         </div>
                     </div>
-                
+                </div>
             </div>
         );
     }
