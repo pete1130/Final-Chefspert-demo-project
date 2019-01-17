@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import UserLayout from '../../HOC/user';
+import UserLayout from '../../../HOC/user';
 
 import FormField from '../../utils/Form/formfield';
 import { update, generateData, isFormValid, populateOptionFields,resetFields} from '../../utils/Form/formActions';
 import FileUpload from '../../utils/Form/fileupload';
 
 import { connect } from 'react-redux';
-import { getMeals,addProduct, clearProduct } from '../../../actions/products_actions';
+import { getMeals, addProduct, clearProduct } from '../../../actions/products_actions';
 
 
 class AddProduct extends Component {
@@ -19,7 +19,7 @@ class AddProduct extends Component {
                 element: 'input',
                 value: '',
                 config:{
-                    label: 'Product name',
+                    label: 'Dish name',
                     name: 'name_input',
                     type: 'text',
                     placeholder: 'Enter your name'
@@ -36,7 +36,7 @@ class AddProduct extends Component {
                 element: 'textarea',
                 value: '',
                 config:{
-                    label: 'Product description',
+                    label: 'Dish description',
                     name: 'description_input',
                     type: 'text',
                     placeholder: 'Enter your description'
@@ -53,10 +53,10 @@ class AddProduct extends Component {
                 element: 'input',
                 value: '',
                 config:{
-                    label: 'Product price',
+                    label: 'Dish price',
                     name: 'price_input',
                     type: 'number',
-                    placeholder: 'Enter your price'
+                    placeholder: 'Enter price'
                 },
                 validation:{
                     required: true
@@ -70,26 +70,9 @@ class AddProduct extends Component {
                 element: 'select',
                 value: '',
                 config:{
-                    label: 'Product Brand',
-                    name: 'brands_input',
+                    label: 'Dish',
+                    name: 'dish_input',
                     options:[]
-                },
-                validation:{
-                    required: true
-                },
-                valid: false,
-                touched: false,
-                validationMessage:'',
-                showlabel: true
-            },
-            mealtype: {
-                element: 'textarea',
-                value: '',
-                config:{
-                    label: 'Product description',
-                    name: 'description_input',
-                    type: 'text',
-                    placeholder: 'Enter your description'
                 },
                 validation:{
                     required: true
@@ -118,7 +101,6 @@ class AddProduct extends Component {
                 validationMessage:'',
                 showlabel: true
             },
-            
             publish: {
                 element: 'select',
                 value: '',
@@ -208,10 +190,11 @@ class AddProduct extends Component {
         const formdata = this.state.formdata;
 
         this.props.dispatch(getMeals()).then( response => {
-            const newFormData = populateOptionFields(formdata,this.props.products.brands,'brand');
+            const newFormData = populateOptionFields(formdata,this.props.products.meals,'meal');
             this.updateFields(newFormData)
         })
 
+        
     }
 
     imagesHandler = (images) => {
@@ -260,14 +243,14 @@ class AddProduct extends Component {
                         <div className="form_devider"></div>
 
                         <FormField
-                            id={'meal'}
+                            id={'brand'}
                             formdata={this.state.formdata.brand}
                             change={(element) => this.updateForm(element)}
                         />
 
                         <FormField
-                            id={'mealtype'}
-                            formdata={this.state.formdata.brand}
+                            id={'shipping'}
+                            formdata={this.state.formdata.shipping}
                             change={(element) => this.updateForm(element)}
                         />
 
@@ -277,7 +260,21 @@ class AddProduct extends Component {
                             change={(element) => this.updateForm(element)}
                         />
 
-                  <div className="form_devider"></div>
+                        <div className="form_devider"></div>
+
+                        <FormField
+                            id={'wood'}
+                            formdata={this.state.formdata.wood}
+                            change={(element) => this.updateForm(element)}
+                        />
+
+                        <FormField
+                            id={'frets'}
+                            formdata={this.state.formdata.frets}
+                            change={(element) => this.updateForm(element)}
+                        />
+
+                        <div className="form_devider"></div>
 
                         <FormField
                             id={'publish'}
@@ -293,7 +290,7 @@ class AddProduct extends Component {
 
                         {this.state.formError ?
                             <div className="error_label">
-                                Please check the data
+                                Please check your data
                                         </div>
                             : null}
                         <button onClick={(event) => this.submitForm(event)}>

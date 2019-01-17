@@ -22,7 +22,7 @@ const CardBlockShop = (props) => {
                     {props.list ?
                         props.list.length === 0 ?
                             <div className="no_result">
-                                No Results
+                                No Results!
                             </div>
                         :null
                     :null}
