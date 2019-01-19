@@ -10,11 +10,14 @@ import UserDashboard from './components/User';
 import Auth from './HOC/auth';
 import AddProduct from './components/User/Admin/add_product';
 import ProductPage from './components/Product';
+import UserCart from './components/User/cart';
+
 
 const Routes = () => {
   return (
     <Layout>
       <Switch>
+        <Route path="/user/cart" component={Auth(UserCart,true)}/>
         <Route path="/product_detail/:id" component={Auth(ProductPage,null)}/>
         <Route path="/user/dashboard" component={Auth(UserDashboard,true)}/>
         <Route path="/admin/add_product" component={Auth(AddProduct,true)}/>

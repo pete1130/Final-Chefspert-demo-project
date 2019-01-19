@@ -6,6 +6,7 @@ class Layout extends Component {
     render () {
         return (
             <div>
+            
                 <Header/>
                 <div className = "page_container">
                 {this.props.children}

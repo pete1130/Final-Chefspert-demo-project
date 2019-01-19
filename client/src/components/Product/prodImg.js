@@ -24,6 +24,7 @@ class ProdImg extends Component {
                 lightboxImages
             })
         }
+       
     }
 
 
@@ -61,11 +62,12 @@ class ProdImg extends Component {
         if(images.length > 0){
             return images[0].url
         }else{
-            return `/images/image_not_availble.png`
+            return '/featured/chillies.jpg'
         }
     }
 
     render() {
+        console.log(this.state)
         const {detail} = this.props;
         return (
             <div className="product_image_container">
@@ -93,6 +95,7 @@ class ProdImg extends Component {
             </div>
         );
     }
+    
 }
 
 export default ProdImg;
